@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-export-as="index.php" wp-template-define-master-page="true">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>New page</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="/wp-content/uploads/automatic-css/automatic.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/block_testimonial.css">
+    </head>
+    <body>
+        <section class="bg--neutral-light-trans-10">
+            <div wp-post-type="testi" wp-post-type-name="Testimonials PG" wp-post-type-name-singular="Testimonial PG" wp-post-type-public="true" wp-post-type-supports="title,custom-fields,editor" wp-post-type-menu-position="10" wp-post-type-rest="true" cms-no-export>
+</div>
+        </section>
+        <section class="bg--neutral-light-trans-10">
+            <div>
+                <h2>Dynamic ACF Block (Loop)</h2>
+                <div cms-block="testimonial-dynamic" cms-block-title="Testimonial - Dynamic" cms-block-category="custom" cms-block-category-custom="testimonial_blocks" cms-block-category-custom-register="true" cms-block-category-custom-register-name="Testimonial Blocks" cms-block-type="native-dynamic" cms-block-style="css/block_testimonial.css" data-pg-name="Dynamic (ACF)" class="grid--auto-3 grid-gap">
+                    <div class="testimonial-card" cms-post="query" cms-post-type="testimonial">
+                        <div class="testimonial-card__rating-wrapper">
+                            <span class="mwe-rating" data-rating="4.5" wp-acf-get-field="rating" wp-acf-get-field-set="attr" wp-acf-get-field-set-attr="data-rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon mwe-rating__icon--half">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/>
+                                    </g>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg></span>
+                        </div>
+                        <p class="testimonial-card__heading" wp-acf-get-field="heading">The short heading</p>
+                        <p class="testimonial-card__text" wp-acf-get-field="text">The testimonial Text</p>
+                        <div class="testimonial-card__info-wrapper">
+                            <img class="testimonial-card__avatar" src="https://pinegrow.com/placeholders/img11.jpg" wp-attachment-image="get_field('avatar')" wp-attachment-image-size="thumbnail"/>
+                            <div class="testimonial-card__name-wrapper">
+                                <div class="testimonial-card__name" wp-acf-get-field="name">John Doe</div>
+                                <div class="testimonial-card__company" wp-acf-get-field="company">ACME Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg--neutral-light-trans-10">
+            <div>
+                <h2>ACF Block</h2>
+                <div class="testimonial-card" cms-block="testimonial-acf" cms-block-title="Testimonial - ACF" cms-block-category="custom" cms-block-category-custom-register="true" cms-block-category-custom="testimonial_blocks" cms-block-category-custom-register-name="Testimonial Blocks" cms-block-style="css/block_testimonial.css" data-pg-name="ACF" cms-block-type="acf">
+                    <div class="testimonial-card__rating-wrapper">
+                        <span class="mwe-rating" data-rating="4.5" wp-acf-get-field="rating" wp-acf-get-field-set="attr" wp-acf-get-field-set-attr="data-rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon mwe-rating__icon--half">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg></span>
+                    </div>
+                    <p class="testimonial-card__heading" wp-acf-get-field="heading">The short heading</p>
+                    <p class="testimonial-card__text" wp-acf-get-field="text">The testimonial Text</p>
+                    <div class="testimonial-card__info-wrapper">
+                        <img class="testimonial-card__avatar" src="https://pinegrow.com/placeholders/img11.jpg" wp-attachment-image="get_field('avatar')" wp-attachment-image-size="thumbnail"/>
+                        <div class="testimonial-card__name-wrapper">
+                            <div class="testimonial-card__name" wp-acf-get-field="name">John Doe</div>
+                            <div class="testimonial-card__company" wp-acf-get-field="company">ACME Inc.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg--secondary-dark-trans-10">
+            <div>
+                <h2>Regular Block</h2>
+                <div class="testimonial-card" cms-block="testimonial-regular" cms-block-title="Testimonial - Regular" cms-block-category="custom" cms-block-category-custom-register="true" cms-block-category-custom="testimonial_blocks" cms-block-category-custom-register-name="Testimonial Blocks" cms-block-style="css/block_testimonial.css" data-pg-name="Regular">
+                    <div class="testimonial-card__rating-wrapper">
+                        <span class="mwe-rating" data-rating="4.5" cms-block-field="rating" cms-block-field-type="attr" cms-block-field-title="Rating" cms-block-field-attribute="data-rating" cms-block-field-control="input" cms-block-field-default-value="5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon mwe-rating__icon--half">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg></span>
+                    </div>
+                    <p class="testimonial-card__heading" cms-block-field="heading" cms-block-field-type="content" cms-block-field-title="Heading">The short heading</p>
+                    <p class="testimonial-card__text" cms-block-field="text" cms-block-field-type="content" cms-block-field-title="Text">The testimonial Text</p>
+                    <div class="testimonial-card__info-wrapper">
+                        <img class="testimonial-card__avatar" src="https://pinegrow.com/placeholders/img11.jpg" cms-block-field="avatar" cms-block-field-type="image" cms-block-field-title="Avatar" cms-block-field-image-size="thumbnail"/>
+                        <div class="testimonial-card__name-wrapper">
+                            <div class="testimonial-card__name" cms-block-field="name" cms-block-field-type="content" cms-block-field-title="Name">John Doe</div>
+                            <div class="testimonial-card__company" cms-block-field="company" cms-block-field-type="content" cms-block-field-title="Company">ACME Inc.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg--neutral-light-trans-10">
+            <div>
+                <h2>Hybrid Block</h2>
+                <div class="testimonial-card" cms-block="testimonial-hybrid" cms-block-title="Testimonial - Hybrid" cms-block-category="custom" cms-block-category-custom-register="true" cms-block-category-custom="testimonial_blocks" cms-block-category-custom-register-name="Testimonial Blocks" cms-block-style="css/block_testimonial.css" data-pg-name="Hybrid" cms-block-type="native-hybrid">
+                    <div class="testimonial-card__rating-wrapper">
+                        <span class="mwe-rating" data-rating="4.5" cms-block-field="rating" cms-block-field-type="attr" cms-block-field-title="Rating" cms-block-field-attribute="data-rating" cms-block-field-control="input" cms-block-field-default-value="5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon mwe-rating__icon--half">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 14.656l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708v6.948zM12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mwe-rating__icon">
+                                <g>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                </g>
+                            </svg></span>
+                    </div>
+                    <p class="testimonial-card__heading" cms-block-field="heading" cms-block-field-type="content" cms-block-field-title="Heading">The short heading</p>
+                    <p class="testimonial-card__text" cms-block-field="text" cms-block-field-type="content" cms-block-field-title="Text">The testimonial Text</p>
+                    <div class="testimonial-card__info-wrapper">
+                        <img class="testimonial-card__avatar" src="https://pinegrow.com/placeholders/img11.jpg" cms-block-field="avatar" cms-block-field-type="image" cms-block-field-title="Avatar" cms-block-field-image-size="thumbnail"/>
+                        <div class="testimonial-card__name-wrapper">
+                            <div class="testimonial-card__name" cms-block-field="name" cms-block-field-type="content" cms-block-field-title="Name">John Doe</div>
+                            <div class="testimonial-card__company" cms-block-field="company" cms-block-field-type="content" cms-block-field-title="Company">ACME Inc.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

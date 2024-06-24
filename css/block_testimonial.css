@@ -1,0 +1,123 @@
+.mwe-rating {
+    --icon-size: 1.5em;
+    --icon-fill-color: var(--primary);
+    --icon-stroke-color: var(--primary);
+    --icon-fill-color-hover: var(--primary-hover);
+    --icon-stroke-color-hover: var(--primary);
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.mwe-rating__icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    fill: var(--icon-fill-color);
+    color: var(--icon-stroke-color);
+}
+
+.mwe-rating__icon:hover {
+    fill: var(--icon-fill-color-hover);
+    color: var(--icon-stroke-color-hover);
+}
+
+.mwe-rating__icon--half {
+    order: 1;
+}
+
+.mwe-rating > *:first-child {
+    display: none;
+}
+
+/* Hide half star by default */
+.mwe-rating[data-rating*="."] > *:first-child {
+    display: flex;
+}
+
+/* Show half star for decimal ratings */
+.mwe-rating[data-rating*=".0"] > *:first-child {
+    display: none !important;
+}
+
+/* Hide half star for .0 ratings */
+.mwe-rating[data-rating^="1"] > *:nth-child(n+3) {
+    display: none;
+}
+
+.mwe-rating[data-rating^="2"] > *:nth-child(n+4) {
+    display: none;
+}
+
+.mwe-rating[data-rating^="3"] > *:nth-child(n+5) {
+    display: none;
+}
+
+.mwe-rating[data-rating^="4"] > *:nth-child(n+6) {
+    display: none;
+}
+
+.testimonial-card {
+    --_content-gap: calc(var(--content-gap) * 0.25);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow-m);
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--_content-gap);
+    background-color: var(--white);
+}
+
+.testimonial-card :where(p) {
+    margin: 0;
+}
+
+.testimonial-card__heading {
+    font-weight: bold;
+}
+
+.testimonial-card__text:before {
+    content: "“";
+}
+
+.testimonial-card__text:after {
+    content: "”";
+}
+
+.testimonial-card__info-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: var(--neutral-light);
+    width: 100%;
+    margin-top: calc(var(--_content-gap) * 1.5);
+    padding-top: calc(var(--_content-gap) * 2);
+}
+
+.testimonial-card__avatar {
+    border-radius: 50vw;
+    width: 50px;
+    height: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.testimonial-card__name-wrapper {
+    display: flex;
+    gap: 0.25em;
+    flex-direction: column;
+    line-height: 1;
+    justify-content: center;
+}
+
+.testimonial-card__name {
+    font-weight: 600;
+}
+
+.testimonial-card__company {
+    color: var(--neutral-medium);
+}
